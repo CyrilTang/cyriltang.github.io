@@ -1,6 +1,10 @@
 - name: 常用推荐
   icon: linecons-star
   links: 
+    - title: Cyril's Blog
+      logo: /assets/images/logos/cyril.png
+      url: https://cyrilstudio.top/
+      description: Cyril-梦溪，分享知识。
     - title: Dribbble
       logo: /assets/images/logos/dribbble.png
       url: https://dribbble.com/
