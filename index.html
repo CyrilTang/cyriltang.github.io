@@ -73,23 +73,30 @@ layout: home
 </div>
 
 <div class="main-content">
-    <--! seacrh -->
-    <div id="search" class="s-search">
-    <div id="search-list" class="hide-type-list">
-        <div class="s-type"><span></span>
-            <div class="s-type-list animated fadeInUp"><label for="type-baidu"><span class="tile-lg bg-blue"><i class="fa fa-search fa-2x m-t-sm"></i></span>搜索</label><label for="type-search"><span class="tile-lg bg-teal"><i class="fa fa-binoculars fa-2x m-t-sm"></i></span>发现</label><label for="type-br"><span class="tile-lg bg-pink"><i class="fa fa-cloud fa-2x m-t-sm"></i></span>网页</label><label for="type-zhihu"><span class="tile-lg bg-yellow"><i class="fa fa-comments fa-2x m-t-sm"></i></span>热门</label><label for="type-taobao1"><span class="tile-lg bg-red"><i class="fa fa-cutlery fa-2x m-t-sm"></i></span>生活</label><label for="type-zhaopin"><span class="tile-lg bg-purple"><i class="fa fa-paw fa-2x m-t-sm"></i></span>资源</label></div>
-        </div>
-        <div class="search-group group-a s-current"><span class="type-text">搜索</span>
-            <ul class="search-type">
-                <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下，你就知道"><label for="type-baidu"><span style="color:#2529d8">百度</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-google" value="https://www.google.com/search?q=" data-placeholder="Don't be evil 👾"><label for="type-google"><span style="color:#4285f4">G</span><span style="color:#ea4335">o</span><span style="color:#fbbc05">o</span><span style="color:#4285f4">g</span><span style="color:#34a853">l</span><span style="color:#ea4335">e</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-github" value="https://github.com/search?q=" data-placeholder="How people build software"><label for="type-github"><span style="color:#333">Github</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-bing1" value="https://cn.bing.com/search?q=" data-placeholder="Bing is for doing"><label for="type-bing1"><span style="color:#0C8484">Bing</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-mj" value="https://mijisou.com/?q=" data-placeholder=" 不追踪你的搜索引擎"><label for="type-mj"><span style="color:#464646">秘迹</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-ddg" value="https://duckduckgo.com/?q=" data-placeholder="隐私保护，化繁为简 👾"><label for="type-ddg"><span style="color:#DE5833">DDG</span></label></li>
-                <li><input hidden="" type="radio" name="type" id="type-volf" value="https://www.yuque.com/volfdynamic/volfclub-wiki/s?q=" data-placeholder="祝你工作顺利"><label for="type-volf"><span style="color:#515c6b">关于本站</span></label></li>
-            </ul>
-        </div>
+    <--! 360seacrh -->
+<style type="text/css">
+#so360{white-space:nowrap}
+#so360 form{margin:0;padding:0}
+#so360_keyword{width:307px;height:24px;line-height:24px;font:14px arial;padding:
+2px 5px;margin-right:5px;border:2px solid #3EAF0E;outline:0;vertical-align:middle;}
+#so360_keyword{background:url(https://p.ssl.qhimg.com/t01ab1a3fb05f0ee893.png)
+no-repeat right center;}
+#so360_submit{width:70px;height:32px;line-height:32px;border:0;color:#fff;
+background:#3FB30E;font-weight:bold;font:bold 14px arial;padding:0;
+padding-top:3px\9;cursor:pointer;
+vertical-align:middle}
+</style>
+<div id="so360">
+    <form action="http://www.so.com/s" target="_blank" id="so360form">
+        <input type="text" autocomplete="off" name="q" id="so360_keyword">
+        <input type="submit" id="so360_submit" value="搜 索">
+        <input type="hidden" name="ie" value="utf-8">
+        <input type="hidden" name="src" value="zz_so.com">
+        <input type="hidden" name="site" value="so.com">
+        <input type="hidden" name="rg" value="1">
+        <input type="hidden" name="inurl" value="">
+    </form>
+</div>
     <--! seacrh -->
     <nav class="navbar user-info-navbar" role="navigation">
         <!-- User Info, Notifications and Menu Bar -->
